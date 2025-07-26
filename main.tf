@@ -27,6 +27,7 @@ data "aws_vpc" "hanna_vpc" {
 #     values = ["*public*"] # Matches names like "hanna-vpc-public-ap-southeast-1a"
 #   }
 # }
+#
 
 data "aws_subnets" "hanna_public_ids" {
   filter {
