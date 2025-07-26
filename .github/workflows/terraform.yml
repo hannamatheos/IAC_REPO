@@ -24,7 +24,7 @@ jobs:
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
-
+      #doesn't need to terraform upgrade every time
       - name: Terraform Init
         run: terraform init
 
