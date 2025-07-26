@@ -63,7 +63,7 @@ module "ecs" {
       container_definitions = {
 
           essential = true
-
+          #push some image first before this
           image     = "${data.aws_caller_identity.current.account_id}.dkr.ecr.${data.aws_region.current.id}.amazonaws.com/${var.owner}-s3-service-ecr:latest"
 
           port_mappings = [
